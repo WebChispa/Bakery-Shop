@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+body {
+    margin: 0px;
+    font-family: 'lato';
+    overflow-x: hidden;
+}
+.header-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+a {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'playfair display';
+}
+a:hover {
+    color: rgb(211, 124, 36);
+    cursor: pointer;
+}
+a:active {
+    opacity: 0.6;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+    color: white;
+    font-weight: 300;
+}
+h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-top: 65px;
+}
+p {
+    text-align: center;
+    font-size: clamp(1rem, 1.3vw, 2rem);
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.product-list {
+  display: flex; /* This is the key! It makes the items line up. */
+  justify-content: space-around; /* This adds space between the items. */
+  gap: 20px; /* Adds a bit of space between each product item. */
+}
+
+.product-item {
+  text-align: center; /* Centers the text and image inside each item. */
+  flex: 1; /* This makes each item take up an equal amount of space. */
+}
+
+.product-item img {
+  max-width: 100%; /* Ensures the image doesn't go outside its container. */
+  height: auto; /* Makes the image responsive and not stretched. */
+}
+.view-more button{
+    font-size: 1.2rem;
+    padding: 15px 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: background-color 0.15s, color 0.15s, border 0.15s;
+}
+.view-more {
+    margin-top: 30px;
+    text-align: center;
+}
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid;
+}
+button:active {
+    background-color: rgb(203, 203, 203);
+}
+
+.contenedor-productos {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+
+.product {
+    flex-basis: 25%;
+    max-width: x;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid;
+}
+
+/* Media Query para Móviles */
+@media (max-width: 768px) {
+    .contenedor-productos {
+        /* Se vuelve una fila horizontal */
+        justify-content: center;
+    }
+
+    .product {
+        /* Los productos ya no se envuelven, se vuelven horizontales */
+        flex-shrink: 0;
+        width: 178px; /* Ancho fijo para el scroll */
+        margin: 8px;
+    }
+}
+
+hr {
+    height: 1.5px;
+    border: none;
+    background-color: black;
+    margin-top: 50px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.history-text {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+@media (max-width:800px) {
+    .history-text p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .history-text {
+        margin: 0 auto;
+        padding: 30px;
+    }
+}
+
+.text-product {
+  max-width: 960px; /* Or any width you prefer */
+  margin: 0 auto;
+  margin-top: 100px; /* Centers the container horizontally */ /* Adds space on the left and right */
+}
+
+.text {
+  padding-left: 20px; /* This gives space inside the container */
+}
+
+.contactanos {
+    color: black;
+    font-weight: 400;
+    font-size: 100px;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+    .contactanos {
+        font-size: 60px;
+    }
+}
+
+.inf-text {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.information {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.direction-map img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    width: 400px;
+    border: 2px solid;
+}
+
